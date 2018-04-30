@@ -34,3 +34,12 @@ body,html{
         background-attachment: scroll;
     }
 }
+.window_chat {
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 10px;
+  background: #0d81d5;
+  color: #fff;
+  }
