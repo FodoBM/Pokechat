@@ -1,9 +1,34 @@
 doctype html
 html
   head
-    title= title
-    link(href='http://fonts.googleapis.com/css?family=Fjalla+One', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    title=title
+    meta(charset="UTF-8")
+    meta(meta name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/stylesheets/mystyle.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato")
+    link(link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+  body.bgimg-1
+    //Navbar (sit on top)
+    div(class="w3-top")
+      div(class="w3-bar" id="myNavbar")
+        a(class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu")
+          i(class="fa fa-bars")
+        a(href="/" class="w3-bar-item w3-button") HOME
+        a(href="/about" class="w3-bar-item w3-button w3-hide-small")
+          i(class="fa fa-user") 
+          label  ABOUT
+        a(href="/pokechat" class="w3-bar-item w3-button w3-hide-small")
+          i(class="fa fa-th") 
+          label  POKECHAT
+        a(href="/contact" class="w3-bar-item w3-button w3-hide-small")
+          i(class="fa fa-envelope") 
+          label  CONTACT
+          
+      //Navbar on small screens
+      div(id="navDemo" class="w3-bar-block w3-grey w3-hide w3-hide-large w3-hide-medium")
+        a(href="/about" class="w3-bar-item w3-button" onclick="toggleFunction()") ABOUT
+        a(href="/pokechat" class="w3-bar-item w3-button" onclick="toggleFunction()") POKECHAT
+        a(href="/contact" class="w3-bar-item w3-button" onclick="toggleFunction()") CONTACT
     block content
+    script(src="/javascripts/toggleFunction.js")

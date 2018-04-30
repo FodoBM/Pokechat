@@ -6,8 +6,16 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'Pokedex AI' });
 });
 
-router.get('/name', function(req, res) {
-    res.render("name");
+router.get('/about', function(req, res) {
+    res.render("about", {title: 'About'});
+});
+
+router.get('/pokechat', function(req, res) {
+    res.render("pokechat", {title: 'Pokechat'});
+});
+
+router.get('/contact', function(req, res) {
+    res.render("contact", {title: 'Contact'});
 });
 
 router.post('/process_post', function (req, res) {

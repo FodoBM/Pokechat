@@ -1,0 +1,36 @@
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif;
+}
+body,html{
+  height: 99%;
+  color: #262626;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.bgimg-1,.bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("/images/BG.png");
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("");
+  min-height: inherit;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2 {
+        background-attachment: scroll;
+    }
+}

@@ -1,5 +1,6 @@
 body {
-  background: #f1eee5;
+  background: #262626;
+  background-image: url("/images/BG.png");
 }
 .contenedorprincipal {
   width: 900px;
