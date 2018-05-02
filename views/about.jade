@@ -1,3 +1,16 @@
-extends layout
-block content
-  div(class="bgimg-1 w3-display-container w3-opacity-min" id="about")
+doctype html
+html(xmlns="http://www.w3.org/1999/xhtml")
+  head
+    script(type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/935cb224/cloudflare-static/rocket.min.js")
+    script(data-rocketsrc="/javascripts/jquery-3.3.1.min.js" type="text/rocketscript")
+    script(data-rocketsrc="/javascripts/bootstrap.min.js" type="text/rocketscript")
+    title Chat - Customer Module
+    link(type="text/css" rel="stylesheet" href="/stylesheets/2nd_style.css")
+  div(id="wrapper")
+    div(id="menu")
+      p(class="welcome") Welcome
+      div(style="clear:both")
+    div(id="chatbox")
+    form(name="message" action="")
+      input(name="usermsg" type="text" id="usermsg" size="63")
+      button(onclick="interactive_call()" type="submit"  id="submitmsg") Send
