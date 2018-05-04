@@ -1,10 +1,9 @@
 doctype html
 html
   body
-      form(action = "/process_post" method = "POST")
+    div(class="w3-display-middle")
+      form(action = '/process_post' method = "GET")
          label First Name: 
          input(type = "text" name = "first_name")
          br
-         label Last Name: 
-         input(type = "text" name = "last_name")
          input(type = "submit" value = "Submit")
