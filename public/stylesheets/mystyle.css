@@ -69,12 +69,9 @@ body,html{
   min-height: 100%;
   min-width: 100%;
 }
-
 .bgimg-2 {
-  background-image: url("");
-  min-height: inherit;
+  background-image: url("/images/pokechat.png");
 }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
@@ -82,6 +79,46 @@ body,html{
     .bgimg-1, .bgimg-2 {
         background-attachment: scroll;
     }
+}
+.msg-question .content{
+  background-color: #3990BF;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 13px;
+  padding: 15px;
+  vertical-align: top;
+  width: 280px;
+}
+.msg-question .arrow-right{
+  display: inline-block;
+  margin-left: -6px;
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #3990BF;
+}
+.msg-answer .content{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  display: inline-block;
+  font-size: 13px;
+  padding: 15px;
+  vertical-align: top;
+  width: 280px;
+}
+.msg-answer .arrow-left{
+  display: inline-block;
+  margin-right: -6px;
+  margin-top: 10px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid white;
 }
 #wrapper, #loginform {
     margin:0 auto;

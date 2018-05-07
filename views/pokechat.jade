@@ -2,12 +2,12 @@ extends layout
 block content
   div(class="bgimg-1 w3-display-container" id="pokechat")
     div(class="row size-normal center-block w3-display-middle")
-      div(class="col-md-10 center-block size-normal-inside")
+      div(class=" col-md-10 center-block size-normal-inside")
         div(class="center")
-          h1 Pokechat v1 no mames
-        div(class="center")
-          textarea( readonly id="chat_text" class="pre-scrolleable center-block")
+          h1 Pokechat v1
+        div(class="")
+          div(id="messages" src = "name" class="pre-scrolleable center-block")       
         div(id="chat_input" class="input-group pad_top center-block")
-          form(action="/pokechat" method="GET" )
-            input(name="input_call" pid="input_call" type="text" class="form-control" placeholder="Introduce tu pregunta aqui")
-            input(type="submit" class="btn btn-primary" value="Enviar")
+          input(name="input_call" id="input_call" type="text" class="form-control" placeholder="Introduce tu pregunta aqui")
+          input(type="submit" onclick="call_my()" class="btn btn-primary" value="Enviar")
+  script(src="/javascripts/call.js")
