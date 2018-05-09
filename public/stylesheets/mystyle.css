@@ -40,6 +40,7 @@ body,html{
   overflow-y: scroll;
   resize: none;
   cursor: default;
+  overflow-x: hidden;
 }
 .btn-primary {
   background-color: #1B95E0;
@@ -57,7 +58,7 @@ body,html{
   background-image: none;
   border: 3px solid transparent;
 }
-.bgimg-1,.bgimg-2 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,7 +71,7 @@ body,html{
   min-width: 100%;
 }
 .bgimg-2 {
-  background-image: url("/images/pokechat.png");
+  background-image: url("/images/BG-chat.jpg");
 }
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -80,8 +81,10 @@ body,html{
         background-attachment: scroll;
     }
 }
+.msg-question{height: 75px;}
+
 .msg-question .content{
-  background-color: #3990BF;
+  background-color: #737373;
   border-radius: 5px;
   color: white;
   display: inline-block;
@@ -89,8 +92,9 @@ body,html{
   padding: 15px;
   vertical-align: top;
   width: 280px;
+  float: right;
 }
-.msg-question .arrow-right{
+.msg-question::after{
   display: inline-block;
   margin-left: -6px;
   margin-top: 10px;
@@ -98,10 +102,13 @@ body,html{
   height: 0;
   border-top: 0px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #3990BF;
+  border-left: 15px solid #737373;
+  float: right;
 }
+.msg-answer{height: 75px;}
+
 .msg-answer .content{
-  background-color: white;
+  background-color: #8080ff;
   border-radius: 5px;
   box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
   display: inline-block;
@@ -109,16 +116,18 @@ body,html{
   padding: 15px;
   vertical-align: top;
   width: 280px;
+  float: left;
 }
-.msg-answer .arrow-left{
+.msg-answer::after{
   display: inline-block;
   margin-right: -6px;
-  margin-top: 10px;
+  margin-top: 80px;
   width: 0;
   height: 0;
   border-top: 0px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid white;
+  border-right: 15px solid #8080ff;
+  float: left;
 }
 #wrapper, #loginform {
     margin:0 auto;
@@ -134,32 +143,16 @@ body,html{
   width: 1170px;
   height: 552px;
   background-color: RED;
+  border-radius: 15px;
 }
 .size-normal-inside {
-  background-color: BLUE;
+  background-color: gray;
   width: 975px;
   height: 522px;
+  border-radius: 15px;
 }
-#chatbox {
-    text-align:left;
-    margin:0 auto;
-    margin-bottom:25px;
-    padding:10px;
-    background:#fff;
-    height:270px;
-    width:430px;
-    border:1px solid #ACD8F0;
-    overflow:auto; }
-
-#usermsg {
-    width:395px;
-    border:1px solid #ACD8F0; }
-
-#submit { width: 60px; }
 
 .error { color: #ff0000; }
-
-#menu { padding:12.5px 25px 12.5px 25px; }
 
 .welcome { float:left; }
 
