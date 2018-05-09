@@ -33,12 +33,12 @@ function Call_AI(){
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){ if( this.readyState == 4 && this.status == 200){
     var data = JSON.parse(this.responseText);
-    write_response(data.current_response.message);
+    write_answer(data.current_response.message);
   }}
 
   xhttp.open('GET',call(read()),true);
   xhttp.send();
-  write_answer(read());
+  write_question(read());
   document.getElementById('input-data').value = '';
  }
 
